@@ -42,6 +42,23 @@ namespace RealEstate_NewsLetter
             dbname = "Jay_Singh_conn";
             Execute_NewsLetter(Jay_Singh_conn);
 
+            SqlConnection Raja_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Raja_conn"].ConnectionString.ToString());
+            EMailAddress = "dontreply081@gmail.com";
+            EmailPassword = "!nd!@123";
+            dbname = "Raja_conn";
+            Execute_NewsLetter(Raja_conn);
+
+            SqlConnection Bobby_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Bobby_conn"].ConnectionString.ToString());
+            EMailAddress = "homefinderingta@gmail.com";
+            EmailPassword = "Website@2019";
+            dbname = "Bobby_conn";
+            Execute_NewsLetter(Bobby_conn);
+
+            SqlConnection Mitesh_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Mitesh_conn"].ConnectionString.ToString());
+            EMailAddress = "miteshtrivedi777@gmail.com";
+            EmailPassword = "CoMputer66";
+            dbname = "Mitesh_conn";
+            Execute_NewsLetter(Mitesh_conn);
 
             SqlConnection Gurmail_Kamboj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Gurmail_Kamboj_conn"].ConnectionString.ToString());
             EMailAddress = "realtorgurmailkambojnews@gmail.com";
@@ -49,6 +66,17 @@ namespace RealEstate_NewsLetter
             dbname = "Gurmail_Kamboj_conn";
             Execute_NewsLetter(Gurmail_Kamboj_conn);
 
+            SqlConnection Pankaj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Pankaj_conn"].ConnectionString.ToString());
+            EMailAddress = "dontreply081@gmail.com";
+            EmailPassword = "!nd!@123";
+            dbname = "Pankaj_conn";
+            Execute_NewsLetter(Pankaj_conn);
+
+            SqlConnection TeamSinghKaur_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TeamSinghKaur_conn"].ConnectionString.ToString());
+            EMailAddress = "agentsidhunews@gmail.com";
+            EmailPassword = "Kalagora";
+            dbname = "TeamSinghKaur_conn";
+            Execute_NewsLetter(TeamSinghKaur_conn);
             SqlConnection Shallu_Sharma_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Shallu_Sharma_conn"].ConnectionString.ToString());
             EMailAddress = "realtorshallunews@gmail.com";
             EmailPassword = "sharma1234";
@@ -592,8 +620,12 @@ namespace RealEstate_NewsLetter
                      || dbname == "Dalip_conn" 
                      || dbname == "Satish_Patil_conn"
                      || dbname == "Rajguru_conn" 
-                    // || dbname == "Nikita_conn"
+                     || dbname == "Mitesh_conn"
+                       || dbname == "Bobby_conn"
+                     || dbname == "Raja_conn"
 
+                      || dbname == "Pankaj_conn"
+                     || dbname == "TeamSinghKaur_conn"
                     || dbname == "Team_Sidhu_conn" || dbname == "Dev_conn" || dbname == "Harvinder_Sohi_conn" || dbname == "Charanjit_conn" || dbname == "Nikita_conn" || dbname== "Fara_conn" || dbname == "SatishSharma_conn" || dbname== "Rashpal_conn"|| dbname== "Suchi_conn" || dbname == "Suresh_conn" || dbname == "Rohit_conn" || dbname == "Varinder_conn"||dbname== "Ranbir_conn" || dbname == "Condo_conn" || dbname == "Sanjiv_conn" || dbname == "Praba_conn" || dbname == "Hetal_conn" || dbname == "Shveta_conn" )
                 {
                     string url = dbname + "_LiveURL";
