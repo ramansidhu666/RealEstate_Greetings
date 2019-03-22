@@ -66,6 +66,15 @@ namespace RealEstate_NewsLetter
             dbname = "Gurmail_Kamboj_conn";
             Execute_NewsLetter(Gurmail_Kamboj_conn);
 
+            SqlConnection Khalid_Ahmed_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Khalid_Ahmed_conn"].ConnectionString.ToString());
+            EMailAddress = "ka463868@gmail.com";
+            EmailPassword = "sarangi11";
+            dbname = "Khalid_Ahmed_conn";
+            Execute_NewsLetter(Khalid_Ahmed_conn);
+
+
+
+
             SqlConnection Pankaj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Pankaj_conn"].ConnectionString.ToString());
             EMailAddress = "dontreply081@gmail.com";
             EmailPassword = "!nd!@123";
@@ -623,7 +632,7 @@ namespace RealEstate_NewsLetter
                      || dbname == "Mitesh_conn"
                        || dbname == "Bobby_conn"
                      || dbname == "Raja_conn"
-
+                      || dbname == "Khalid_Ahmed_conn"
                       || dbname == "Pankaj_conn"
                      || dbname == "TeamSinghKaur_conn"
                     || dbname == "Team_Sidhu_conn" || dbname == "Dev_conn" || dbname == "Harvinder_Sohi_conn" || dbname == "Charanjit_conn" || dbname == "Nikita_conn" || dbname== "Fara_conn" || dbname == "SatishSharma_conn" || dbname== "Rashpal_conn"|| dbname== "Suchi_conn" || dbname == "Suresh_conn" || dbname == "Rohit_conn" || dbname == "Varinder_conn"||dbname== "Ranbir_conn" || dbname == "Condo_conn" || dbname == "Sanjiv_conn" || dbname == "Praba_conn" || dbname == "Hetal_conn" || dbname == "Shveta_conn" )
